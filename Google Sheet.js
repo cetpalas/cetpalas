@@ -7,5 +7,5 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
   .then(response => alert("Inregistrat cu succes!" ))
   .then(() => { window.location.reload(); })
-  .catch(error => console.error('Error!', error.message))
+  .catch(error => console.error('Eroare!', error.message))
 })
