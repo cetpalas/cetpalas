@@ -7,7 +7,7 @@
 	<div class="container">
 		<form method="post" action="https://script.google.com/macros/s/AKfycbyVC5Wi0MHUxejUskmAy4UfwCIETri9v4STvjBTn_2yRPlba5EyoSODX5wBdIxtsWs6JQ/exec" name="contact-form">
 			<h4>Introducere valori contorizare:</h4>					
-   		<select id="Nume-Centrala" name="Nume-Centrala">
+   		<select id="Nume-Centrala" name="Nume-Centrala" required="">
 		    <option value="Centrala">Centrala</option>
 		    <option value="CT E">CT E</option>
 		    <option value="BN 1">BN 1</option>
@@ -58,17 +58,17 @@
     <option value="Ionescu">Ionescu</option> 
     </select> <br> <br>
 		   <input type="datetime-local" name="Data" placeholder="Data" required=""> <br>
-			<input type="number" name="AgPPresTur" placeholder="Agent Primar Presiune Tur">
-			<input type="number" name="AgPPresRetur" placeholder="Agent Primar Presiune Retur">
-			<input type="number" name="AgPTempTur" placeholder="Agent Primar Temperatura Tur">
-			<input type="number" name="AgPTempRetur" placeholder="Agent Primar Temperatura Retur">
-			<input type="number" name="IncalzireTempTur" placeholder="Incalzire Temperatura Tur">
-			<input type="number" name="IncalzireTempRetur" placeholder="Incalzire Temperatura Retur">
-			<input type="number" name="IncalzirePresTur" placeholder="Incalzire Presiune Tur">
-			<input type="number" name="IncalzirePresRetur" placeholder="Incalzire Presiune Retur">
-			<input type="number" name="ApaCaldaP10Temp" placeholder="Apa Calda P 10 Temperatura">
-			<input type="number" name="ApaCaldaP10Pres" placeholder="Apa Calda P 10 Presiune">
-			<input type="number" name="ApaReceP10Pres" placeholder="Apa Rece P10 Presiune">
+			<input type="number" name="AgPPresTur" placeholder="Agent Primar Presiune Tur" min="30" max="90" step=".01">
+			<input type="number" name="AgPPresRetur" placeholder="Agent Primar Presiune Retur" step=".01">
+			<input type="number" name="AgPTempTur" placeholder="Agent Primar Temperatura Tur" step=".01">
+			<input type="number" name="AgPTempRetur" placeholder="Agent Primar Temperatura Retur" step=".01">
+			<input type="number" name="IncalzireTempTur" placeholder="Incalzire Temperatura Tur" step=".01">
+			<input type="number" name="IncalzireTempRetur" placeholder="Incalzire Temperatura Retur" step=".01">
+			<input type="number" name="IncalzirePresTur" placeholder="Incalzire Presiune Tur" step=".01">
+			<input type="number" name="IncalzirePresRetur" placeholder="Incalzire Presiune Retur" step=".01">
+			<input type="number" name="ApaCaldaP10Temp" placeholder="Apa Calda P 10 Temperatura" step=".01">
+			<input type="number" name="ApaCaldaP10Pres" placeholder="Apa Calda P 10 Presiune" step=".01">
+			<input type="number" name="ApaReceP10Pres" placeholder="Apa Rece P10 Presiune" step=".01">
 			<textarea name="Observatii" rows="4" placeholder="Observatii"></textarea>
 			<input type="submit" value="Submit" id="submit">
 		</form>
